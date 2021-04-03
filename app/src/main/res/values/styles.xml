@@ -2,7 +2,8 @@
 <resources>
 
     <style name="Theme.BlityNews" parent="Theme.MaterialComponents.NoActionBar">
-
+        <item name="android:statusBarColor">?backgroundColor</item>
+        <item name="android:windowBackground">?colorSurface</item>
     </style>
 
 </resources>
