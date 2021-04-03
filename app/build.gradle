@@ -1,0 +1,69 @@
+import com.blityapps.blitynews.buildSrc.Dependencies
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.blityapps.blitynews"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.0.0-beta01'
+    }
+}
+
+dependencies {
+    implementation Dependencies.kotlin
+
+    implementation Dependencies.AndroidX.core
+    implementation Dependencies.AndroidX.appCompat
+    implementation Dependencies.materialDesign
+
+    implementation Dependencies.AndroidX.Compose.UI
+    implementation Dependencies.AndroidX.Compose.UITooling
+    implementation Dependencies.AndroidX.Compose.foundation
+    implementation Dependencies.AndroidX.Compose.materialDesign
+    implementation Dependencies.AndroidX.Compose.materialDesignIcons
+    implementation Dependencies.AndroidX.Compose.materialDesignIconsExtended
+    implementation Dependencies.AndroidX.Compose.activityCompose
+    implementation Dependencies.AndroidX.Compose.lifecycleViewModelCompose
+    implementation Dependencies.AndroidX.Compose.runtimeLivedata
+
+    testImplementation Dependencies.Test.junit4
+    androidTestImplementation Dependencies.Test.junit4Extensions
+
+    androidTestImplementation Dependencies.Test.Compose.uiTest
+    androidTestImplementation Dependencies.Test.Compose.test
+}
