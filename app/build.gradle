@@ -20,6 +20,10 @@ android {
     }
 
     buildTypes {
+        debug {
+            minifyEnabled false
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -60,6 +64,7 @@ dependencies {
     implementation Dependencies.AndroidX.Compose.activityCompose
     implementation Dependencies.AndroidX.Compose.lifecycleViewModelCompose
     implementation Dependencies.AndroidX.Compose.runtimeLivedata
+    implementation Dependencies.AndroidX.Compose.navigation
 
     testImplementation Dependencies.Test.junit4
     androidTestImplementation Dependencies.Test.junit4Extensions
