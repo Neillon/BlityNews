@@ -6,7 +6,7 @@ name: Pull Request Check
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   pull_request:
-    branches: ['**']
+    branches: [ '**' ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,3 +30,8 @@ jobs:
         
       - name: Run static code analysis with detekt
         run: gradlew detekt
+        
+      - name: Run unit tests
+        run: gradlew testDebug
+      
+      
