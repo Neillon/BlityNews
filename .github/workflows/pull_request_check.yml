@@ -22,16 +22,16 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build Project
-        run: gradlew assembleDebug
+        run: ./gradlew assembleDebug
 
       # Runs a set of commands using the runners shell
       - name: Run code format check with Ktlint
-        run: gradlew ktlint
+        run: ./gradlew ktlint
         
       - name: Run static code analysis with detekt
-        run: gradlew detekt
+        run: ./gradlew detekt
         
       - name: Run unit tests
-        run: gradlew testDebug
+        run: ./gradlew testDebug
       
       
