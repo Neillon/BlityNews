@@ -20,17 +20,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: Set up our JDK environment
-        uses: actions/setup-java@v1.4.3
-        with:
-          java-version: 1.8
-      
       - name: Makes gradlew executable
         run: chmod +x ./gradlew
 
       # Runs a single command using the runners shell
-      - name: Build Project
-        run: ./gradlew build
+      # - name: Build Project
+      #  run: ./gradlew build
 
       # Runs a set of commands using the runners shell
       - name: Run code format check with Ktlint
