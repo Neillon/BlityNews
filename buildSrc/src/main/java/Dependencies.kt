@@ -15,28 +15,24 @@ object Dependencies {
 
             // Tooling support (Previews, etc.)
             const val UITooling = "androidx.compose.ui:ui-tooling:1.0.0-beta03"
-
             // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
             const val foundation = "androidx.compose.foundation:foundation:1.0.0-beta03"
-
             // Material Design
             const val materialDesign = "androidx.compose.material:material:1.0.0-beta03"
-
             // Material design icons
             const val materialDesignIcons =
                 "androidx.compose.material:material-icons-core:1.0.0-beta03"
             const val materialDesignIconsExtended =
                 "androidx.compose.material:material-icons-extended:1.0.0-beta03"
-
             // Integration with activities
             const val activityCompose = "androidx.activity:activity-compose:1.3.0-alpha05"
-
             // Integration with ViewModels
             const val lifecycleViewModelCompose =
                 "androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha03"
-
             // Integration with observables
             const val runtimeLivedata = "androidx.compose.runtime:runtime-livedata:1.0.0-beta03"
+            // Navigation
+            const val navigation = "androidx.navigation:navigation-compose:1.0.0-alpha09"
 
         }
     }
@@ -49,5 +45,13 @@ object Dependencies {
             const val test = "androidx.compose.ui:ui-test-junit4:1.0.0-beta03"
             const val uiTest = "androidx.compose.ui:ui-test:1.0.0-beta03"
         }
+    }
+
+    object Ktlint {
+        const val ktlint = "com.pinterest:ktlint:0.40.0"
+    }
+
+    object Detekt {
+        const val detekt = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.16.0"
     }
 }
