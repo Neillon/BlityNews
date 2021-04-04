@@ -1,2 +1,5 @@
 rootProject.name = "Blity News"
 include ':app'
+include ':libraries:network'
+include ':libraries:database'
+include ':domain'

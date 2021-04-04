@@ -1,0 +1,34 @@
+import com.blityapps.blitynews.buildSrc.Dependencies
+
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+}
+
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation Dependencies.Koin.core
+    implementation Dependencies.Koin.test
+
+    testImplementation Dependencies.Coroutines.test
+    testImplementation Dependencies.Test.mockk
+    testImplementation Dependencies.Test.mockito
+    testImplementation Dependencies.Test.junit4
+    testImplementation Dependencies.Test.junit4Extensions
+}

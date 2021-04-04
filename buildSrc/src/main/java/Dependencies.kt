@@ -37,14 +37,42 @@ object Dependencies {
         }
     }
 
+    object Coroutines {
+        private const val coroutinesVersion = "1.4.3"
+        const val test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion"
+    }
+
     object Test {
         const val junit4 = "junit:junit:4.13.2"
         const val junit4Extensions = "androidx.test.ext:junit:1.1.2"
+
+        const val junit5 = "org.junit.jupiter:junit-jupiter"
+        const val truth = "com.google.truth:truth:1.1.2"
+        const val mockk = "io.mockk:mockk:1.11.0"
+        const val mockito = "org.mockito:mockito-core:1.10.19"
 
         object Compose {
             const val test = "androidx.compose.ui:ui-test-junit4:1.0.0-beta03"
             const val uiTest = "androidx.compose.ui:ui-test:1.0.0-beta03"
         }
+    }
+
+    object Koin {
+        private const val koin_version = "3.0.1-beta-2"
+        // Koin for Kotlin Multiplatform
+        const val core = "io.insert-koin:koin-core:$koin_version"
+
+        // Koin Test for Kotlin Multiplatform
+        const val test = "io.insert-koin:koin-test:$koin_version"
+
+        // Koin main features for Android (Scope,ViewModel ...)
+        const val android = "io.insert-koin:koin-android:$koin_version"
+        // Koin Android - experimental builder extensions
+        const val androidExtensions = "io.insert-koin:koin-android-ext:$koin_version"
+        // Koin for Jetpack WorkManager
+        const val workManager = "io.insert-koin:koin-androidx-workmanager:$koin_version"
+        // Koin for Jetpack Compose (unstable version)
+        const val compose = "io.insert-koin:koin-androidx-compose:$koin_version"
     }
 
     object Ktlint {
