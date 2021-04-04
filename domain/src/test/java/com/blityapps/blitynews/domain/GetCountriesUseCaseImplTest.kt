@@ -56,5 +56,4 @@ class GetCountriesUseCaseTest {
         val result = interactor.execute(GetCountriesUseCase.Params())
         assertEquals(someCountries, result)
     }
-
 }

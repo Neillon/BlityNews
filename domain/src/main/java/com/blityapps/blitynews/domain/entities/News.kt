@@ -1,6 +1,6 @@
 package com.blityapps.blitynews.domain.entities
 
-import java.util.*
+import java.util.Date
 
 data class News(
     val source: Source,
