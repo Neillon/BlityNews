@@ -10,7 +10,7 @@ import org.junit.Before
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-open class BaseDatabaseTest: TestCase() {
+open class BaseDatabaseTest : TestCase() {
 
     protected lateinit var database: BlityNewsDatabase
 
@@ -24,5 +24,4 @@ open class BaseDatabaseTest: TestCase() {
     override fun tearDown() {
         database.close()
     }
-
 }

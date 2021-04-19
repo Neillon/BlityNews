@@ -7,5 +7,5 @@ data class Source(
     val url: String,
     val category: Category,
     val language: String,
-    val country: Country,
+    val country: Country
 )

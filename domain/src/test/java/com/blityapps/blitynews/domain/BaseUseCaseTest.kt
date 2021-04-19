@@ -19,5 +19,4 @@ abstract class BaseUseCaseTest {
     fun tearDown() {
         unmockkAll()
     }
-
 }

@@ -1,20 +1,17 @@
 package com.blityapps.blitynews.database.daos
 
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Transaction
 import com.blityapps.blitynews.database.entities.NewsEntity
 import com.blityapps.blitynews.database.valueobjects.NewsAndSourceAndCountry
 
 @Dao
 interface NewsDao {
-    @Query(
-        value = "UPDATE news set is_favorite = ${true} where id == :newsId"
-    )
-    suspend fun favoriteNews(newsId: Int): Int
-
-    @Query(
-        value = "UPDATE news set is_favorite = ${false} where id == :newsId"
-    )
-    suspend fun unfavoriteNews(newsId: Int): Int
+    @Query(value = "UPDATE news set is_favorite = :isFavorite where id == :newsId")
+    suspend fun favoriteNews(isFavorite: Boolean, newsId: Int): Int
 
     @Transaction
     @Query(value = "SELECT * FROM news")

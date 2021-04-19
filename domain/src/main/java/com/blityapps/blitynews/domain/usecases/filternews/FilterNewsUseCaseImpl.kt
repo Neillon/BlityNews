@@ -3,7 +3,7 @@ package com.blityapps.blitynews.domain.usecases.filternews
 import com.blityapps.blitynews.domain.entities.News
 import com.blityapps.blitynews.domain.repositories.NewsRepository
 import com.blityapps.blitynews.domain.sealed.NewsFilter
-import java.util.*
+import java.util.Date
 
 class FilterNewsUseCaseImpl(
     private val repository: NewsRepository

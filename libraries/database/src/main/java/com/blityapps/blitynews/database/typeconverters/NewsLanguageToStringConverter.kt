@@ -1,7 +1,6 @@
 package com.blityapps.blitynews.database.typeconverters
 
 import androidx.room.TypeConverter
-import com.blityapps.blitynews.domain.enums.NewsCategory
 import com.blityapps.blitynews.domain.enums.NewsLanguage
 
 class NewsLanguageToStringConverter {

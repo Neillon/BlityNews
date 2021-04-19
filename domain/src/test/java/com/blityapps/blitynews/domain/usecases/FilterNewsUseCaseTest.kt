@@ -48,7 +48,6 @@ abstract class FilterNewsUseCaseTest {
         }
     }
 
-
     @RunWith(JUnit4::class)
     class WithoutParams : BaseFilterNewsUseCaseTest() {
         @Test

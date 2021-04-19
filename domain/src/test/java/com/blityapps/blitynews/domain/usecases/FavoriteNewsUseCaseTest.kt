@@ -41,5 +41,4 @@ class FavoriteNewsUseCaseTest : BaseUseCaseTest() {
         coEvery { newsLocalRepository.favoriteNews(any()) } throws Exception()
         assertFails { interactor.execute(FavoriteNewsUseCase.Params(1)) }
     }
-
 }

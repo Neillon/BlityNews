@@ -3,7 +3,7 @@ package com.blityapps.blitynews.domain.entities
 import com.blityapps.blitynews.domain.enums.NewsCategory
 import com.blityapps.blitynews.domain.enums.NewsCountry
 import com.blityapps.blitynews.domain.enums.NewsLanguage
-import java.util.*
+import java.util.Date
 
 data class News(
     val source: Source,

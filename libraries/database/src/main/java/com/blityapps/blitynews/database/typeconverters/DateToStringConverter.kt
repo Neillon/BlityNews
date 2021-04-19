@@ -2,7 +2,7 @@ package com.blityapps.blitynews.database.typeconverters
 
 import androidx.room.TypeConverter
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Date
 
 class DateToStringConverter {
 

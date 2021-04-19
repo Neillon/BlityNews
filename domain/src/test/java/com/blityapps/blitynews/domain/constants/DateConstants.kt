@@ -1,6 +1,6 @@
 package com.blityapps.blitynews.domain.constants
 
-import java.util.*
+import java.util.Calendar
 
 internal object DateConstants {
     val DATE_2011 = Calendar.getInstance().apply {

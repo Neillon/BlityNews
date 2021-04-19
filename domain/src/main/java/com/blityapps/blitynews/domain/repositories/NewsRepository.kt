@@ -1,7 +1,7 @@
 package com.blityapps.blitynews.domain.repositories
 
 import com.blityapps.blitynews.domain.entities.News
-import java.util.*
+import java.util.Date
 
 interface NewsRepository {
     suspend fun getAll(): List<News>
@@ -15,6 +15,6 @@ interface NewsRepository {
         to: Date? = null,
         language: String? = null,
         country: String? = null,
-        category: String? = null,
+        category: String? = null
     ): List<News>
 }

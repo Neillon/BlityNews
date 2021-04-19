@@ -17,5 +17,5 @@ data class SourceEntity(
     val category: NewsCategory,
     val language: String,
     @ColumnInfo(name = "country_id")
-    val countryId: Int,
+    val countryId: Int
 )

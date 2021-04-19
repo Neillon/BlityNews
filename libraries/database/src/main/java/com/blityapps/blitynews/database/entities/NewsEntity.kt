@@ -3,10 +3,9 @@ package com.blityapps.blitynews.database.entities
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import androidx.room.Relation
 import com.blityapps.blitynews.domain.enums.NewsCategory
 import com.blityapps.blitynews.domain.enums.NewsLanguage
-import java.util.*
+import java.util.Date
 
 @Entity(
     tableName = "news"

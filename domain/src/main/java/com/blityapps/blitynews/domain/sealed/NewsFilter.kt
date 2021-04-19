@@ -3,7 +3,7 @@ package com.blityapps.blitynews.domain.sealed
 import com.blityapps.blitynews.domain.enums.NewsCategory
 import com.blityapps.blitynews.domain.enums.NewsCountry
 import com.blityapps.blitynews.domain.enums.NewsLanguage
-import java.util.*
+import java.util.Date
 
 sealed class NewsFilter {
     data class Dates(val from: Date? = null, val to: Date? = null) : NewsFilter()

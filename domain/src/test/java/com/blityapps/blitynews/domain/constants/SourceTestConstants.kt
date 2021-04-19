@@ -14,7 +14,7 @@ internal object SourceTestConstants {
         url = "http://www.globo.com/",
         category = Category(NewsCategory.GENERAL.name),
         language = NewsLanguage.PT.langCode,
-        country = CountriesTestConstants.brazil,
+        country = CountriesTestConstants.brazil
     )
 
     val bbc = Source(
@@ -24,7 +24,6 @@ internal object SourceTestConstants {
         url = "http://www.bbc.co.uk/news",
         category = Category(NewsCategory.GENERAL.name),
         language = NewsLanguage.EN.langCode,
-        country = CountriesTestConstants.uk,
+        country = CountriesTestConstants.uk
     )
-
 }

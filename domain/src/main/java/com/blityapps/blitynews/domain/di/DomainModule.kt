@@ -5,10 +5,7 @@ import com.blityapps.blitynews.domain.usecases.getcountries.GetCountriesUseCaseI
 import org.koin.dsl.module
 
 object DomainModule {
-
     val dependencies = module {
         factory<GetCountriesUseCase> { GetCountriesUseCaseImpl(get()) }
     }
-
-
 }
