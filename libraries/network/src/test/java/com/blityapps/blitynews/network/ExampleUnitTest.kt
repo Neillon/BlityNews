@@ -1,4 +1,4 @@
-package com.blityapps.blitynews.myapplication
+package com.blityapps.blitynews.network
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
