@@ -1,4 +1,4 @@
-package com.blityapps.blitynews.domain.usecases
+package com.blityapps.blitynews.domain.usecases.getcountries
 
 import com.blityapps.blitynews.domain.abstractions.UseCase
 import com.blityapps.blitynews.domain.entities.Country

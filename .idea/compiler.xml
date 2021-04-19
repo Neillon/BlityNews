@@ -5,6 +5,7 @@
       <module name="Blity_News.app" target="11" />
       <module name="Blity_News.libraries.database" target="11" />
       <module name="Blity_News.libraries.network" target="11" />
+      <module name="Blity_News.repositories" target="11" />
       <module name="BlityNews.buildSrc" target="11" />
     </bytecodeTargetLevel>
   </component>

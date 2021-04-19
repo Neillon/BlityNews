@@ -35,6 +35,12 @@ object Dependencies {
             const val navigation = "androidx.navigation:navigation-compose:1.0.0-alpha09"
 
         }
+
+        object Room {
+            const val roomRuntime = "androidx.room:room-runtime:2.2.6"
+            const val roomCompiler = "androidx.room:room-compiler:2.2.6"
+            const val roomKtx = "androidx.room:room-ktx:2.2.6"
+        }
     }
 
     object Coroutines {
@@ -54,6 +60,10 @@ object Dependencies {
         object Compose {
             const val test = "androidx.compose.ui:ui-test-junit4:1.0.0-beta03"
             const val uiTest = "androidx.compose.ui:ui-test:1.0.0-beta03"
+        }
+
+        object AndroidX {
+            const val room = "androidx.room:room-testing:2.2.6"
         }
     }
 

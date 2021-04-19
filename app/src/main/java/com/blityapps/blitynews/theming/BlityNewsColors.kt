@@ -12,6 +12,7 @@ object BlityNewsColors {
     private const val COLOR_PRIMARY_VARIANT_LIGHT = 0xFF006ecb
     private const val COLOR_SECONDARY_LIGHT = 0xFFffe0b4
     private const val COLOR_SECONDARY_VARIANT_LIGHT = 0xFFcbae84
+    private const val COLOR_SURFACE_LIGHT = 0xFFF1F1F1
 
     val lightColors = lightColors(
         primary = Color(COLOR_PRIMARY_LIGHT),
@@ -19,7 +20,7 @@ object BlityNewsColors {
         secondary = Color(COLOR_SECONDARY_LIGHT),
         secondaryVariant = Color(COLOR_SECONDARY_VARIANT_LIGHT),
         background = Color.White,
-        surface = Color.White,
+        surface = Color(COLOR_SURFACE_LIGHT),
         error = Color(COLOR_ERROR),
         onPrimary = Color.White,
         onSecondary = Color.Black,
@@ -33,7 +34,7 @@ object BlityNewsColors {
     private const val COLOR_SECONDARY_DARK = 0xFFffffe6
     private const val COLOR_SECONDARY_VARIANT_DARK = 0xFFffe0b4
     private const val COLOR_BACKGROUND_DARK = 0xFF343434
-    private const val COLOR_SURFACE_DARK = 0xFF343434
+    private const val COLOR_SURFACE_DARK = 0xFF424242
 
     val darkColors = darkColors(
         primary = Color(COLOR_PRIMARY_DARK),
