@@ -46,8 +46,6 @@ dependencies {
     implementation Dependencies.Koin.test
 
     implementation Dependencies.AndroidX.Room.roomRuntime
-    implementation 'androidx.room:room-runtime:2.2.6'
-    annotationProcessor 'androidx.room:room-compiler:2.2.6'
     kapt Dependencies.AndroidX.Room.roomCompiler
     implementation Dependencies.AndroidX.Room.roomKtx
 

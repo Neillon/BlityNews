@@ -93,14 +93,16 @@ abstract class FilterNewsUseCaseTest {
 
         @Test
         fun `should filter news with `() = runBlockingTest {
-            coVerify(exactly = 1) {
-                interactor.execute(
-                    FilterNewsUseCase.Params(
-                        filters = listOf(
-                            filter
-                        )
+            interactor.execute(
+                FilterNewsUseCase.Params(
+                    filters = listOf(
+                        filter
                     )
                 )
+            )
+
+            coVerify(exactly = 1) {
+                newsRemoteRepository.filter(any(), any(), any(), any(), any())
             }
         }
     }

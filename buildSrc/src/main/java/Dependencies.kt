@@ -49,7 +49,7 @@ object Dependencies {
     }
 
     object Test {
-        const val junit4 = "junit:junit:4.13.2"
+        const val junit4 = "junit:junit:4.12"
         const val junit4Extensions = "androidx.test.ext:junit:1.1.2"
 
         const val junit5 = "org.junit.jupiter:junit-jupiter"
